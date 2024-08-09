@@ -1,18 +1,16 @@
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World';
+  @State luckyDog: string = 'Hello World';
+  @State random:number=0
+  names:string[]=['xax','xbx','xcx','xdx']
 
   build() {
     RelativeContainer() {
-      Text(this.message)
-        .id('HelloWorld')
-        .fontSize(50)
-        .fontWeight(FontWeight.Bold)
-        .alignRules({
-          center: { anchor: '__container__', align: VerticalAlign.Center },
-          middle: { anchor: '__container__', align: HorizontalAlign.Center }
-        })
+      Text(this.luckyDog)
+        .fontSize(30)
+      Button('下一个幸运儿！')
+
     }
     .height('100%')
     .width('100%')
