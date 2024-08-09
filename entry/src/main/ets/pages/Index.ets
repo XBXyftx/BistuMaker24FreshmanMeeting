@@ -23,6 +23,9 @@ struct Index {
 
     }
     .justifyContent(FlexAlign.Center)
+    .backgroundImage($rawfile('BistuMaker.jpg'))
+    .backgroundImageSize({width:'100%'})
+    .backgroundImagePosition({y:100})
     .height('100%')
     .width('100%')
   }
