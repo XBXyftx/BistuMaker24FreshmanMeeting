@@ -6,7 +6,7 @@ struct Index {
   names:string[]=['xax','xbx','xcx','xdx','xex','xfx']
 
   build() {
-    Column({space:20}) {
+    Column({space:30}) {
       Image($rawfile('BistuMaker.png'))
         .width('100%')
         .margin({bottom:20})
