@@ -12,8 +12,6 @@ struct Index {
         .margin({bottom:20})
       Text(this.luckyDog)
         .fontSize(35)
-        .width('100%')
-        .textAlign(TextAlign.Center)
         .fontColor('#ff0098cf')
         .fontWeight(700)
       Button('抽取下一个幸运儿！')
