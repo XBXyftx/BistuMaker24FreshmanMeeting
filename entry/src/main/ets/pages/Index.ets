@@ -1,15 +1,25 @@
 @Entry
 @Component
 struct Index {
-  @State luckyDog: string = '欢迎来到创客空间！';
+  @State luckyDog: string = '  欢迎来到创客空间！';
   @State random:number=0
   names:string[]=['xax','xbx','xcx','xdx','xex','xfx']
 
   build() {
     Column({space:20}) {
+      Image($rawfile('BistuMaker.png'))
+        .width('100%')
+        .margin({bottom:20})
       Text(this.luckyDog)
-        .fontSize(30)
-      Button('下一个幸运儿！')
+        .fontSize(35)
+        .width('100%')
+        .textAlign(TextAlign.Center)
+        .fontColor('#ff0098cf')
+        .fontWeight(700)
+      Button('抽取下一个幸运儿！')
+        .backgroundColor('#490098cf')
+        .fontSize(20)
+        .padding({top:10,bottom:10,left:25,right:25})
         .onClick(()=>{
           if (this.names.length>0) {
             this.random=Math.floor(Math.random()*this.names.length)
@@ -20,12 +30,14 @@ struct Index {
           }
 
         })
+      Image($rawfile('ChuangKe.png'))
+        .width('80%')
+        .margin({top:20})
 
     }
     .justifyContent(FlexAlign.Center)
-    .backgroundImage($rawfile('BistuMaker.jpg'))
-    .backgroundImageSize({width:'100%'})
-    .backgroundImagePosition({y:100})
+    .backgroundImage($rawfile('starSky.jpg'))
+    .backgroundImageSize({height:'100%'})
     .height('100%')
     .width('100%')
   }
