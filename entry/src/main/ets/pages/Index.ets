@@ -4,7 +4,6 @@ struct Index {
   @State luckyDog: string = '  欢迎来到创客空间！';
   @State random:number=0
   names:string[]=['xax','xbx','xcx','xdx','xex','xfx']
-
   build() {
     Column({space:30}) {
       Image($rawfile('BistuMaker.png'))
