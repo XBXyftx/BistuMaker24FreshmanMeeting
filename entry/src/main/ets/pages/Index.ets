@@ -21,7 +21,7 @@ struct Index {
       Text(this.luckyDog)
         .fontSize(this.fontSize)
         .height(100)
-        .fontColor('#ff0098cf')
+        .fontColor('#ff6dffff')
         .fontWeight(700)
       Text('  抽到的人来自我介绍哦！')
         .fontSize(25)
